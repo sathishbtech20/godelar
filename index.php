@@ -6,7 +6,9 @@ class Home
 	{
 	}
 	
-	// Get the page title 
+	/* 
+	 * Get the page title 
+     */     
 	public function getPageTitle()
 	{
 		return 'Home page';
