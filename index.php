@@ -8,10 +8,20 @@ class Home
 	
 	/* 
 	 * Get the page title 
-     */     
+	 *
+	 */
 	public function getPageTitle()
 	{
 		return 'Home page';
+	}
+
+	/* 
+	 * Get the breadcrumb
+	 *
+	 */
+	public function getBreadcrumb()
+	{
+		return 'Home';
 	}
 }
 
