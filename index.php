@@ -14,6 +14,15 @@ class Home
 	{
 		return 'Home page';
 	}
+
+	/* 
+	 * Get the breadcrumb
+	 *
+	 */
+	public function getBreadcrumb()
+	{
+		return 'Home';
+	}
 }
 
 $home = new Home();
