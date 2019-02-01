@@ -1,18 +1,39 @@
 <?php
 // Home class
-class Home
+class Page
 {
+	protected $pageTitle;
+	protected $breadcrumb;
+
 	public function __construct()
 	{
 	}
 	
+	/* 
+	 * Set the page title 
+	 *
+	 */
+	public function setPageTitle($title)
+	{
+		$this->pageTitle = $title;
+	}
+
 	/* 
 	 * Get the page title 
 	 *
 	 */
 	public function getPageTitle()
 	{
-		return 'Home page';
+		return $this->pageTitle;
+	}
+
+	/* 
+	 * Get the breadcrumb
+	 *
+	 */
+	public function setBreadcrumb($value)
+	{
+		$this->breadcrumb = $value;
 	}
 
 	/* 
@@ -21,10 +42,10 @@ class Home
 	 */
 	public function getBreadcrumb()
 	{
-		return 'Home';
+		return $this->breadcrumb;
 	}
 }
 
-$home = new Home();
-
-echo $home->getPageTitle();
+$page = new Page();
+$page->getPageTitle('Home');
+echo $page->getPageTitle();
